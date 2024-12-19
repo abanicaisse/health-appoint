@@ -48,7 +48,7 @@ const PasskeyModal = () => {
 
   const closeModal = () => {
     setOpen(false);
-    router.push("/");
+    router.push("/login");
   };
 
   const validatePasskey = (

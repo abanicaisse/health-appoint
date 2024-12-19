@@ -75,7 +75,7 @@ const Success = async ({ params, searchParams }: SearchParamProps) => {
           </Link>
         </Button>
 
-        <p className="copyright pt-10 pb-12">&#169; 2024 CarePulse</p>
+        <p className="copyright pt-10 pb-12">&#169; 2024 NicaisseHealth</p>
       </div>
     </div>
   );

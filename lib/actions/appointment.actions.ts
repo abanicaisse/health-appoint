@@ -74,7 +74,7 @@ export const getRecentAppointmentList: GetRecentAppointmentListFn =
 
       const counts = (appointments.documents as Appointment[]).reduce(
         (acc, appointment) => {
-          switch (appointment.status) {
+          switch (appointment.appointmentStatus) {
             case "scheduled":
               acc.scheduledCount++;
               break;
