@@ -76,7 +76,7 @@ const AppointmentForm = ({
           schedule: new Date(values.schedule),
           reason: values.reason!,
           note: values.note,
-          status: status as Status,
+          appointmentStatus: status as Status,
         };
 
         const appointment = await createAppointment(appointmentData);
