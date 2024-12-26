@@ -7,7 +7,7 @@ export const generateMagicLink = async (email: string) => {
     const token = await account.createMagicURLToken(
       ID.unique(),
       email,
-      "http://localhost:3000/login/magic-link"
+      `${process.env.NEXT_PUBLIC_APP_DOMAIN}/login/magic-link",`
     );
     return token;
   } catch (error) {
