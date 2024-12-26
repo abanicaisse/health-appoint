@@ -4,7 +4,7 @@ import { FormFieldType } from "@/components/forms/PatientForm";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useState } from "react";
 
 import { Form } from "@/components/ui/form";
 
@@ -20,7 +20,7 @@ import { generateMagicLink } from "@/lib/actions/auth.actions";
 import { useSearchParams } from "next/navigation";
 import PasskeyModal from "@/components/PasskeyModal";
 
-const LoginPage = () => {
+const LoginPageContent = () => {
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -35,7 +35,7 @@ const LoginPage = () => {
   const searchParams = useSearchParams();
   const isAdmin = searchParams.get("admin") === "true";
   console.log(isAdmin);
-  // Define a submit handler.
+  // Submit handler.
   async function onSubmit({ email }: z.infer<typeof LoginFormValidation>) {
     setIsLoading(true);
 
@@ -75,12 +75,12 @@ const LoginPage = () => {
                   fieldType={FormFieldType.INPUT}
                   name="email"
                   label="Email"
-                  placeholder="johndoe@gmail.com"
+                  placeholder="abanicaisse@gmail.com"
                   iconSrc="/assets/icons/email.svg"
                   iconAlt="email"
                 />
 
-                <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
+                <SubmitButton isLoading={isLoading}>Login</SubmitButton>
               </form>
             </Form>
 
@@ -89,7 +89,7 @@ const LoginPage = () => {
               &#169; 2024 NicaisseHealth
             </p> */}
               <div className="flex gap-2">
-                <p>Don't have an account? </p>
+                <p>Don&apos;t have an account? </p>
                 <Link href={"/"} className="text-green-500 hover:underline">
                   Register
                 </Link>
@@ -108,5 +108,11 @@ const LoginPage = () => {
     </Suspense>
   );
 };
+
+const LoginPage = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <LoginPageContent />
+  </Suspense>
+);
 
 export default LoginPage;

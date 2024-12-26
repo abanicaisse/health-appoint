@@ -41,7 +41,7 @@ const RegisterForm = ({ user }: { user: User }) => {
     },
   });
 
-  // Define a submit handler.
+  // Submit handler.
   async function onSubmit(values: z.infer<typeof PatientFormValidation>) {
     setIsLoading(true);
 
@@ -98,7 +98,7 @@ const RegisterForm = ({ user }: { user: User }) => {
           fieldType={FormFieldType.INPUT}
           name="name"
           label="Full Name"
-          placeholder="John Doe"
+          placeholder="Aba Nicaisse"
           iconSrc="/assets/icons/user.svg"
           iconAlt="user"
         />
@@ -110,7 +110,7 @@ const RegisterForm = ({ user }: { user: User }) => {
             fieldType={FormFieldType.INPUT}
             name="email"
             label="Email"
-            placeholder="johndoe@gmail.com"
+            placeholder="abanicaisse@gmail.com"
             iconSrc="/assets/icons/email.svg"
             iconAlt="email"
           />

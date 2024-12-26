@@ -30,7 +30,7 @@ const LoginPage = () => {
 
   const form = useForm();
 
-  // Define a submit handler.
+  // Submit handler.
   async function onSubmit() {
     try {
       setIsLoading(true);

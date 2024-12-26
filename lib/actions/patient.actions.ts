@@ -11,13 +11,6 @@ import {
   PATIENT_COLLECTION_ID,
   PROJECT_ID,
   storage,
-  // BUCKET_ID,
-  // DATABASE_ID,
-  // ENDPOINT,
-  // PATIENT_COLLECTION_ID,
-  // PROJECT_ID,
-  // databases,
-  // storage,
   users,
 } from "../appwrite.config";
 import { parseStringify } from "../utils";

@@ -57,7 +57,7 @@ const AppointmentForm = ({
     },
   });
 
-  // Define a submit handler.
+  // Submit handler.
   async function onSubmit(values: z.infer<typeof AppointmentFormValidation>) {
     setIsLoading(true);
 

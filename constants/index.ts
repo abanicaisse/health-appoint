@@ -38,11 +38,11 @@ export const IdentificationTypes = [
 export const Doctors = [
   {
     image: "/assets/images/dr-green.png",
-    name: "John Green",
+    name: "Aba Nicaisse",
   },
   {
     image: "/assets/images/dr-cameron.png",
-    name: "Leila Cameron",
+    name: "Maria Mutombo",
   },
   {
     image: "/assets/images/dr-livingston.png",
@@ -50,27 +50,27 @@ export const Doctors = [
   },
   {
     image: "/assets/images/dr-peter.png",
-    name: "Evan Peter",
+    name: "Esther Mahahya",
   },
   {
     image: "/assets/images/dr-powell.png",
-    name: "Jane Powell",
+    name: "James Butembo",
   },
   {
     image: "/assets/images/dr-remirez.png",
-    name: "Alex Ramirez",
+    name: "Alexa Ramirez",
   },
   {
     image: "/assets/images/dr-lee.png",
-    name: "Jasmine Lee",
+    name: "Josephine Mumbere",
   },
   {
     image: "/assets/images/dr-cruz.png",
-    name: "Alyana Cruz",
+    name: "Aline Baraka",
   },
   {
     image: "/assets/images/dr-sharma.png",
-    name: "Hardik Sharma",
+    name: "Dieumerci Mbokani",
   },
 ];
 

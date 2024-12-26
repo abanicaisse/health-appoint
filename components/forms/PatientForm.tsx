@@ -37,7 +37,7 @@ const PatientForm = () => {
     },
   });
 
-  // Define a submit handler.
+  // Submit handler.
   async function onSubmit({
     name,
     email,
@@ -72,7 +72,7 @@ const PatientForm = () => {
           fieldType={FormFieldType.INPUT}
           name="name"
           label="Full name"
-          placeholder="John Doe"
+          placeholder="Aba Nicaisse"
           iconSrc="/assets/icons/user.svg"
           iconAlt="user"
         />
@@ -81,7 +81,7 @@ const PatientForm = () => {
           fieldType={FormFieldType.INPUT}
           name="email"
           label="Email"
-          placeholder="johndoe@gmail.com"
+          placeholder="abanicaisse@gmail.com"
           iconSrc="/assets/icons/email.svg"
           iconAlt="email"
         />
